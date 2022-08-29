@@ -25,20 +25,26 @@ int main() {
     cin >> secondNumber; //second user input variable
     cout << "Enter the operator you wish to use (the choices are + for addition, - for subtraction, * for multiplication and / for division): ";
     cin >> selectOperator; //user input which selects operator of use
-    if (selectOperator == "+") {
+    // conditional chain determining results
+    if (selectOperator == "+") { 
+        // if condition for addition options
         finalAnswer = firstNumber + secondNumber;
         cout << firstNumber << " + " << secondNumber << " = " << finalAnswer;
-    } else if (selectOperator == "-") {
+    } else if (selectOperator == "-") { 
+        // if condition for subtraction options
         finalAnswer = firstNumber - secondNumber;
         cout << firstNumber << " - " << secondNumber << " = " << finalAnswer;
     } else if (selectOperator == "*") {
+        // if condition for multiplication options
         finalAnswer = firstNumber * secondNumber;
         cout << firstNumber << " * " << secondNumber << " = " << finalAnswer;
     } else if (selectOperator == "/") {
+        // if condition for division options
         finalAnswer = firstNumber / secondNumber;
         cout << firstNumber << " / " << secondNumber << " = " << finalAnswer;
     } else {
-        cout << "Error: Incorrect value entered for operator.";
+        // error condition for irrelevant input
+        cout << "Error: Unrecognised value entered for operator.";
     }
     return 0;
 }
